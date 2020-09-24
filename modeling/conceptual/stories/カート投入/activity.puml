@@ -1,0 +1,12 @@
+@startuml
+start
+-> 商品;
+
+if (カート投入可能な商品か?) then (no)
+  :投入を却下する;
+else (yes)
+  :カートに商品を追加する;
+endif
+
+stop
+@enduml
